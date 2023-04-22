@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onload Event</title>
+    <link rel="stylesheet" href="s2.css">
+</head>
+<body id="body">
+    <div id="wrapper">
+        <div id="button" class="black">Click & Change color</div>
+        <div id="content">
+            <h1>Shristi Srivastava</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat, iure qui, voluptatibus officiis modi facere sit beatae quaerat quia quisquam, consequuntur ad corporis velit autem laudantium quidem reprehenderit ipsam nostrum provident?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id adipisci odit voluptate amet, iusto quibusdam beatae, error suscipit at sint eveniet nihil debitis voluptatum aperiam aspernatur quod eum, corrupti odio.</p>
+            
+        </div>
+
+    </div>
+    <script>
+        window.onload=function(){
+            let body=document.getElementById('body');
+let button=document.getElementById('button');
+
+button.onclick= function () {
+    if (body.className =="black") 
+    {
+        body.className = "white";
+        button.className= "black";
+    }
+    else {
+        body.className = "black";
+        button.className= "white";
+    };
+}
+        };
+       
+    </script>
+</body>
+</html>

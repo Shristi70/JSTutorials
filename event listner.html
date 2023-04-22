@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listner</title>
+    <link rel="stylesheet" href="s3.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="block1">
+            <h1 style="font-style: italic;">Rain</h1>
+            <img src="img/img9.jpg" id="img1">
+        </div><!--end block1-->
+
+        <div id="block2">
+            <h1 style="font-style: italic;">Autumn</h1>
+            <img src="img/img10.jpg" id="img2">
+        </div><!--end block2-->
+
+
+    </div>
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <script>
+        document.getElementById('img1').onmouseover = abc;
+        function abc() {
+            document.getElementById('img1').style.filter = 'grayscale(10%)';
+        };
+
+        document.getElementById('img1').onmouseout = xyz;
+        function xyz() {
+            document.getElementById('img1').style.filter = 'grayscale(100%)';
+        }
+
+        document.getElementById('img2').onmouseover = lmn;
+        function lmn() {
+            document.getElementById('img2').style.filter = 'grayscale(20%)';
+        };
+
+        document.getElementById('img2').onmouseout = opq;
+        function opq() {
+            document.getElementById('img2').style.filter = 'grayscale(100%)';
+        }
+    </script>
+</body>
+
+</html>
